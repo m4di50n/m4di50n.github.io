@@ -1,0 +1,209 @@
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Fascinate&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap');      
+      body {
+        background-color: white;
+      }
+      /* loading */
+      .loading {
+        font-family: 'DynaPuff', cursive;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgb(49, 114, 255);
+        z-index: 99;
+      }
+      .loading:after {
+        content: "";
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: -30px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        border: 6px solid #f2f2f2;
+        border-top: 6px solid #f2f2f2;
+        border-bottom: 6px solid #f2f2f2;
+        border-radius: 30%;
+        animation: loading 2s infinite;
+      }
+      .loading:before {
+        padding-left: 15px;
+        font-size: 20px;
+        letter-spacing: 5px;
+        color: white;
+        content: "loading...";
+        position: absolute;
+        top: 57%;
+        text-align: center;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+      }
+      
+      @keyframes loading {
+        0% {
+          transform: rotate(0);
+        }
+        50% {
+          transform: rotate(360deg);
+        }
+      }
+      /* </loading  */
+
+
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+      .round {
+        margin: 10px;
+        padding: 5px;
+        margin-right: 50px;
+        border: none;
+        max-width: 35%;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 30px;
+        float: left;
+        shape-outside: circle();
+        color: white;
+      }
+      h1 {
+        margin-top: 100px;
+        color: white;
+      }
+      .about {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      p {
+        color: white;
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: start;
+      }
+      .pic1 {
+        background-image: url(backgrounds/splitbackground.jpeg);
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        background-size: 100% 100%;
+      }
+      .pic2 {
+        background-image: url(backgrounds/splitbackground2.png);
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        background-size: 100% 100%;
+      }
+      nav {
+        font-family: "Montserrat Alternates", sans-serif;
+        padding: 100px;
+      }
+      li {
+        padding: 5px;
+      }
+      .navbar-brand {
+        font-family: "Fascinate", cursive;
+      }
+      section {
+        font-family: "Montserrat Alternates", sans-serif;
+        color: white;
+        font-size: 1.1em;
+        height: auto;
+        text-align: center;
+        padding: 5em 2em;
+      }
+      button {
+        font-family: "Fascinate", cursive;
+        font-weight: bolder;
+        font-size: 1.1em;
+        text-decoration: none;
+      }
+      .cta {
+        margin: 0 auto;
+        text-align: center;       
+      }
+      footer {
+        font-family: "Montserrat Alternates", sans-serif;
+        position:absolute;
+        bottom:-700;
+        width:100%;
+        color: white;
+      }
+      footer p {
+        text-align: center;
+      }
+      .email {
+        font-family: "Fascinate", cursive;
+        margin-top: 10px;
+        color: white;
+        border-radius: 10px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: solid;
+        cursor: pointer;
+        overflow: hidden;
+        outline: none;
+      }
+      .email button {
+        text-align: center;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+      .email:hover {
+       color:rgb(49, 114, 255);
+        background-color: white;
+        mix-blend-mode: normal;
+      }
+      svg {
+        fill: currentColor;
+        height: auto;
+        max-width: 66vmin;
+        transform-origin: center;
+        width: 40%;
+      }
+      .row {
+        margin-top: 30px;
+      }
+      .table {
+        font-size: 1.1rem;
+        margin-top: 40px;
+        margin-left: -5px;
+        text-align: center;
+      }
+      .container,
+      section {
+        margin: 0 auto;
+        max-width: 960px;
+      }
+      th {
+        color: white;
+        font-size: larger;
+        font-family: "Fascinate", cursive;
+      }
+      td {
+        color: white;
+      }
+
+      @media screen and (min-width: 601px) {
+        p {
+          font-size: 20px;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        p {
+          font-size: 17px;
+        }
+      }
+      @media screen and (max-width: 400px) {
+        .round {
+          width: 50%;
+        }
+      }
