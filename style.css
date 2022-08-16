@@ -2,12 +2,18 @@
       @import url("https://fonts.googleapis.com/css2?family=Fascinate&display=swap");
       @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap');      
       body {
-      background-color: black;      }
-      .container {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        background-size: 100% 100%;
+        background: radial-gradient(#e66465, #9198e5);
+      
+      }
+      /* .container {
         height: 100%;
         width: 100%;
         background: radial-gradient(#e66465, #9198e5);
-      }
+      } */
       /* loading */
       .loading {
         font-family: 'DynaPuff', cursive;
