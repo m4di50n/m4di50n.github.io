@@ -3,11 +3,12 @@
       @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap');      
       body {
         margin: 0 auto;
-        width: 100%;
+        background-repeat: no-repeat;
         height: 100%;
-        background-size: 100% 100%;
+        background-position: center;
+        background-size: cover;
         background: radial-gradient(#e66465, #9198e5);
-      
+        
       }
       /* .container {
         height: 100%;
@@ -113,7 +114,7 @@
       } */
       nav {
         font-family: "Montserrat Alternates", sans-serif;
-        padding: 100px;
+        /* padding: 100px; */
       }
       li {
         padding: 5px;
@@ -142,7 +143,7 @@
       footer {
         font-family: "Montserrat Alternates", sans-serif;
         position:absolute;
-        bottom:-700;
+        bottom:0; 
         width:100%;
         color: white;
       }
@@ -182,12 +183,12 @@
       .row {
         margin-top: 30px;
       }
-      .table {
+      /* .table {
         font-size: 1.1rem;
         margin-top: 40px;
         margin-left: -5px;
         text-align: center;
-      }
+      } */
       .container,
       section {
         margin: 0 auto;
@@ -199,10 +200,14 @@
         font-family: "Fascinate", cursive;
       }
       td {
+        margin-top: 10px;
+        font-family: "Montserrat Alternates", sans-serif;
+
         color: white;
       }
+     
 
-      @media screen and (min-width: 601px) {
+      /* @media screen and (min-width: 601px) {
         p {
           font-size: 20px;
         }
@@ -216,4 +221,4 @@
         .round {
           width: 50%;
         }
-      }
+      } */
