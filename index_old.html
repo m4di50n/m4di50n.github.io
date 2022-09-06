@@ -17,18 +17,14 @@
       crossorigin="anonymous"
     ></script>
     <style>
-      .navbar img {
-        width: 100px;
-      }
       body {
         text-align: center;
         background-color: black;
         color: white;
-        font-family: "Montserrat Alternates", sans-serif;
       }
       .highlights {
         font-family: "Montserrat Alternates", sans-serif;
-        padding: 50px;
+        padding: 60px;
         font-size: 1.4rem;
         display: grid;
         grid-auto-flow: column;
@@ -63,13 +59,16 @@
         .highlights {
           font-size: 1.7em;
           padding: 20px;
-          padding-bottom: 20px;
+          padding-bottom: 50px;
         }
         .col {
           padding: 20px;
         }
         .navbar {
           font-size: 1rem;
+        }
+        .navbar img {
+          width: 100px;
         }
       }
       @media screen and (min-width: 310px) and (max-width: 420px) {
@@ -84,41 +83,6 @@
           margin-right: 30px;
         }
       }
-      .about {
-        font-size: 2vw;
-        font-family: "Montserrat Alternates", sans-serif;
-        padding-top: 70px;
-        margin-bottom: 100px;
-      }
-      @media only screen and (max-width: 390px) {
-        .about {
-          display: grid;
-        }
-        .round {
-          width: 50%;
-          margin: 0 auto;
-        }
-        p {
-          text-align: center;
-          margin-top: 20px;
-        }
-      }
-      .head {
-        margin-top: 30px;
-        margin-bottom: -20px;
-        font-family: "Fascinate", cursive;
-      }
-      .line {
-        height: 1px;
-        background: white;
-        max-width: 80%;
-        margin: 0 auto;
-        margin-top: -50px;
-        margin-bottom: 130px;
-      }
-      .lastp {
-        margin-bottom: 90px;
-      }
     </style>
   </head>
   <body>
@@ -130,7 +94,7 @@
       <div class="container-fluid">
         <!-- Navbar brand -->
         <div style="margin: -10px" class="navbar-brand">
-          <img width="60px" src="images/logo.png" alt="" />
+          <img width="60px" src="images/md.png" alt="" />
         </div>
 
         <!-- Toggle button -->
@@ -190,25 +154,5 @@
         </div>
       </div>
     </div>
-    <div class="line"></div>
-    <h1 class="head">about</h1>
-    <!-- Navbar -->
-    <div class="about">
-      <img class="round" src="images/selfie.jpg" alt="" />
-
-      <p>
-        indigneous web developer based in
-        <b>treaty 1 territory</b> (winnipeg, manitoba). initially a self-taught
-        coder, madison has earned her web development diploma from the
-        university of winnipeg in august of 2022.
-      </p>
-      <p class="lastp">
-        her areas of expertise include modern digital designs and creating a
-        responsive and accessable front-end experience.
-      </p>
-    </div>
-    <div class="line"></div>
-
-    <h1 class="head">skills</h1>
   </body>
 </html>
