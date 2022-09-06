@@ -55,6 +55,11 @@
       .navbar {
         margin-top: 10px;
       }
+      @media screen and (min-width: 700px) {
+        .highlights .row {
+          width: 110%;
+        }
+      }
       @media screen and (min-width: 600px) {
         h1,
         h2 {
@@ -62,12 +67,14 @@
         }
         .highlights {
           font-size: 1.7em;
-          padding: 20px;
+          padding: 40px;
+          margin: 10px;
           padding-bottom: 20px;
         }
-        .col {
-          padding: 20px;
-        }
+
+        /* .col {
+          padding: 70px;
+        } */
         .navbar {
           font-size: 1rem;
         }
@@ -82,6 +89,9 @@
           padding: 10px;
           margin-left: 30px;
           margin-right: 30px;
+        }
+        .highlights .col {
+          padding-bottom: 30px;
         }
       }
       .about {
@@ -104,20 +114,83 @@
         }
       }
       .head {
-        margin-top: 30px;
+        /* margin-top: 30px; */
         margin-bottom: -20px;
         font-family: "Fascinate", cursive;
       }
-      .line {
+      /* .line {
         height: 1px;
         background: white;
         max-width: 80%;
         margin: 0 auto;
         margin-top: -50px;
         margin-bottom: 130px;
-      }
+      } */
       .lastp {
-        margin-bottom: 90px;
+        margin-bottom: 30%;
+      }
+      /* skills */
+
+      h4 {
+        font-family: "Fascinate", cursive;
+      }
+      .skills .col {
+        margin: 10px;
+        padding: 5px;
+      }
+
+      .skills {
+        margin-left: -30px;
+      }
+      .skill {
+        margin-left: 30px;
+      }
+      .skills ul {
+        list-style: none;
+        display: grid;
+        font-family: "Montserrat Alternates", sans-serif;
+        /* margin-left: -50px; */
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+      }
+      @media only screen and (max-width: 450px) {
+        .skills {
+          font-size: 1.2rem;
+          padding: 30px;
+        }
+      }
+      /* subtitle */
+      .subtitle {
+        font-family: "Fascinate", cursive;
+        margin-top: 20px;
+        margin-bottom: -10px;
+      }
+      .fancy {
+        line-height: 0.3;
+        text-align: center;
+      }
+      .fancy span {
+        display: inline-block;
+        position: relative;
+      }
+      .fancy span:before,
+      .fancy span:after {
+        content: "";
+        position: absolute;
+        height: 5px;
+        border-bottom: 1px solid white;
+        border-top: 1px solid white;
+        top: 0;
+        width: 100px;
+      }
+      .fancy span:before {
+        right: 100%;
+        margin-right: 15px;
+      }
+      .fancy span:after {
+        left: 100%;
+        margin-left: 15px;
       }
     </style>
   </head>
@@ -190,8 +263,10 @@
         </div>
       </div>
     </div>
-    <div class="line"></div>
-    <h1 class="head">about</h1>
+    <!-- <div class="line"></div> -->
+    <!-- <h1 class="head">about</h1> -->
+    <h4 class="subtitle fancy"><span>about</span></h4>
+
     <!-- Navbar -->
     <div class="about">
       <img class="round" src="images/selfie.jpg" alt="" />
@@ -207,8 +282,59 @@
         responsive and accessable front-end experience.
       </p>
     </div>
-    <div class="line"></div>
+    <!-- <div class="line"></div> -->
 
-    <h1 class="head">skills</h1>
+    <!-- <h1 class="head">skills</h1> -->
+    <h4 class="subtitle fancy"><span>skills</span></h4>
+
+    <div class="row">
+      <div class="col">
+        <div class="skills">
+          <h4 class="skill">languages</h4>
+
+          <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+            <li>php</li>
+            <li>sql</li>
+            <li>java</li>
+            <li>xml</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="skills">
+          <h4 class="skill">frameworks</h4>
+
+          <ul>
+            <li>vue.js</li>
+            <li>laravel</li>
+            <li>react</li>
+            <li>jquery</li>
+            <li>bootstrap</li>
+            <li>node.js</li>
+            <li>npm</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="skills">
+          <h4 class="skill">tools</h4>
+
+          <ul>
+            <li>wordpress</li>
+            <li>apache</li>
+            <li>linux</li>
+            <li>vscode</li>
+            <li>github</li>
+            <li>bitbucket</li>
+            <li>photoshop</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
