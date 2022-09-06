@@ -23,23 +23,31 @@
     ></script>
 
     <script>
-      window.onscroll = () => {
-        toggleTopButton();
-      };
-      function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
+      var i = 0;
+      var txt = "madison delaronde";
+      var speed = 100;
 
-      function toggleTopButton() {
-        if (document.body.scrollTop > 500) {
-          document.getElementById("back-to-up").classList.remove("d-none");
-        } else {
-          document.getElementById("back-to-up").classList.add("d-none");
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("demo").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
         }
       }
     </script>
+    <style>
+      .hello {
+        margin-top: 100px;
+        font-family: "Montserrat Alternates", sans-serif;
+      }
+      #demo {
+        margin: 0 auto;
+        max-width: 80%;
+        /* margin-top: 100px; */
+      }
+    </style>
   </head>
-  <body>
+  <body onload="typeWriter()">
     <nav
       id="navigation"
       class="navbar navbar-expand-lg navbar-dark shadow-5-strong"
@@ -93,13 +101,14 @@
     <button
       class="btn btn-sm btn-light rounded-square position-fixed bottom-50 end-0 translate-middle d-none"
       onclick="scrollToTop()"
-      id="back-to-up"
+      id="back-to-top"
     >
       <i class="fa fa-arrow-up" aria-hidden="true"></i>
     </button>
-
-    <h2>hello, my name is</h2>
-    <h1>madison delaronde</h1>
+    <h1 class="hello">hello, my name is</h1>
+    <h1 id="demo"></h1>
+    <!-- <h2>hello, my name is</h2>
+    <h1>madison delaronde</h1> -->
 
     <div class="highlights">
       <div class="row">
