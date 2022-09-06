@@ -35,7 +35,7 @@
 
       .row {
         text-align: center;
-        padding-top: 50px;
+        padding-top: 80px;
       }
       h1 {
         /* font-size: 5vw; */
@@ -50,7 +50,38 @@
         margin: 10px;
         padding: 5px;
       }
-
+      @media screen and (max-width: 500px) {
+        .col {
+          margin-bottom: 10px;
+        }
+        .highlights {
+          font-size: 5vw;
+        }
+      }
+      .cta {
+        font-size: 18px;
+        padding-bottom: 20px;
+      }
+      @media screen and (min-width: 600px) {
+        /* h1 {
+          font-size: 30px;
+        } */
+        .highlights {
+          font-size: 26px;
+        }
+        .navbar {
+          font-size: 1.2rem;
+        }
+        .cta {
+          font-size: 26px;
+          padding-bottom: 20px;
+        }
+      }
+      @media screen and (min-width: 300px) and (max-width: 502px) {
+        .col {
+          padding: 5px;
+        }
+      }
       /* skills */
       .skills {
         margin-left: -40px;
@@ -61,16 +92,10 @@
       ul {
         display: grid;
         font-family: "Montserrat Alternates", sans-serif;
-        /* margin-left: -50px; */
+        margin-left: -50px;
         align-items: center;
         justify-items: center;
         margin: 0 auto;
-      }
-      @media only screen and (max-width: 450px) {
-        .skills {
-          font-size: 1.2rem;
-          padding: 30px;
-        }
       }
     </style>
   </head>
