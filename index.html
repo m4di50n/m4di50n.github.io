@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>madison</title>
+    <link rel="icon" type="image/x-icon" href="images/whitestar_small.png" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,29 +25,34 @@
     ></script>
 
     <script>
+      // header
       var i = 0;
       var txt = "madison delaronde";
       var speed = 100;
 
       function typeWriter() {
         if (i < txt.length) {
-          document.getElementById("demo").innerHTML += txt.charAt(i);
+          document.getElementById("header_animated").innerHTML += txt.charAt(i);
           i++;
           setTimeout(typeWriter, speed);
         }
       }
+
+      // scroll to top (mobile)
+      window.onscroll = () => {
+        toggleTopButton();
+      };
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+      function toggleTopButton() {
+        if (document.body.scrollTop > 500) {
+          document.getElementById("back-to-top").classList.remove("d-none");
+        } else {
+          document.getElementById("back-to-top").classList.add("d-none");
+        }
+      }
     </script>
-    <style>
-      .hello {
-        margin-top: 100px;
-        font-family: "Montserrat Alternates", sans-serif;
-      }
-      #demo {
-        margin: 0 auto;
-        max-width: 80%;
-        /* margin-top: 100px; */
-      }
-    </style>
   </head>
   <body onload="typeWriter()">
     <nav
@@ -106,7 +113,7 @@
       <i class="fa fa-arrow-up" aria-hidden="true"></i>
     </button>
     <h1 class="hello">hello, my name is</h1>
-    <h1 id="demo"></h1>
+    <h1 id="header_animated"></h1>
     <!-- <h2>hello, my name is</h2>
     <h1>madison delaronde</h1> -->
 
@@ -128,7 +135,7 @@
     </div>
 
     <div id="about">
-      <h4 class="subtitle fancy"><span>about</span></h4>
+      <h4 class="subtitle fancy"><span>&#10056; about &#10056;</span></h4>
 
       <div class="about">
         <img class="round" src="images/selfie.jpg" alt="" />
@@ -147,7 +154,7 @@
     </div>
 
     <div id="skills">
-      <h4 class="subtitle fancy"><span>skills</span></h4>
+      <h4 class="subtitle fancy"><span>&#10056; skills &#10056;</span></h4>
 
       <div class="row">
         <div class="col">
@@ -198,12 +205,10 @@
     </div>
     <div class="cta">
       <a class="email" href="madison_delaronde.pdf" target="_blank"
-        >PDF resume</a
-      >
+        >PDF resume
+      </a>
     </div>
 
-    <footer>
-      <p>madison delaronde &copy; 2022</p>
-    </footer>
+    <footer>&#10023; &nbsp; made with love &nbsp; &#10023;</footer>
   </body>
 </html>
