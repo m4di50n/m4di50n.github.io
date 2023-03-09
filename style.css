@@ -7,10 +7,10 @@
         height: 100%;
         background-position: center;
         background-size: cover;
-        background: radial-gradient(#e66465, #9198e5);
+        background: radial-gradient(#7fe3a9, #d76819);
         overflow-x: hidden;
         text-align: center;
-        background-color: black;
+        background-color: pink;
         color: white;
         font-family: "Montserrat Alternates", sans-serif;
       }
