@@ -356,3 +356,19 @@
       .firstp {
         margin-top: 15px;
       }
+
+      /* dark mode stuff */
+
+      @media (prefers-color-scheme: light) {
+        body {
+          background: red;
+          color: #222;
+        }
+      }
+      
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: blue;
+          color: #fff;
+        }
+      }
