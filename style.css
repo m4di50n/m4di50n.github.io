@@ -10,7 +10,6 @@
         background: radial-gradient(#7fe3a9, #d76819);
         overflow-x: hidden;
         text-align: center;
-        background-color: pink;
         color: white;
         font-family: "Montserrat Alternates", sans-serif;
       }
@@ -359,16 +358,18 @@
 
       /* dark mode stuff */
 
-      @media (prefers-color-scheme: light) {
-        body {
-          background: red;
-          color: #222;
-        }
-      }
       
       @media (prefers-color-scheme: dark) {
         body {
-          background-color: blue;
-          color: #fff;
+          margin: 0 auto;
+          background-repeat: no-repeat;
+          height: 100%;
+          background-position: center;
+          background-size: cover;
+          background: radial-gradient(#7fe3a9, #d76819);
+          overflow-x: hidden;
+          text-align: center;
+          color: white;
+          font-family: "Montserrat Alternates", sans-serif;
         }
       }
